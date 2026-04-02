@@ -1,0 +1,362 @@
+/* HomePage.css */
+.product-card {
+  /* border-left: 1px solid lightgray; */
+  border-left: 1px solid lightgray;
+  /* border-right: 1px solid lightgray; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 180px;
+  height: auto; /* Set a fixed width for smaller cards */
+  justify-content: space-between;
+  background-color: #fff;
+  flex-shrink: 0;
+  padding-bottom: 16px; /* Add spacing between cards */
+}
+
+.product-card:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+.product-image {
+  width: 100%; /* Ensure the image spans the full width of the card */
+  height: auto;
+  border-radius: 4px 4px 0 0;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: 1rem; /* Smaller font size for titles */
+  font-weight: normal;
+  color: #575656;
+}
+
+.product-price {
+  font-size: 0.7rem; /* Smaller font size for prices */
+  color: #ff4141;
+  background-color: rgb(252, 226, 226);
+  margin-left: 55px;
+  margin-right: 55px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.buy-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 10px; /* Smaller padding for buttons */
+  border-radius: 4px;
+  font-size: 0.9rem; /* Smaller font size for buttons */
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}
+.btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px 20px; /* Add padding for a nicer look */
+  margin-left: 20px;
+  margin-bottom: 10px; /* Add spacing between buttons */
+  margin-right: auto;
+  text-align: left; /* Align text to the left */
+  font-size: 16px; /* Increase font size for better readability */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover effects */
+}
+
+/* Add custom padding to the right of the text in flex wrap */
+.inner-container1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  border: 1px solid lightgrey; /* Add a border with a light gray color */
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+.inner-container2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: white;
+  border: 1px solid lightgrey; /* Add a border with a light gray color */
+  border-radius: 6px;
+}
+
+/* Add custom background color for entire container */
+.custom-style {
+  justify-content: center;
+}
+
+.outer-container1 {
+  
+  padding: 30px 70px 20px 70px;
+  background-color: rgb(248, 249, 250);
+}
+.outer-container2 {
+  display: flex;
+  flex: 1;
+  padding: 0px 70px 20px 70px;
+  background-color: rgb(248, 249, 250);
+}
+
+/* Add custom padding to the right of the text in flex wrap */
+.custom-padding-right {
+  padding-top: 40px;
+}
+.v-menu {
+  flex: 1;
+}
+.b-menu {
+  flex: 2;
+}
+.c-menu {
+  padding: 0px 20px;
+  flex: 1;
+}
+.vertical-menu {
+  list-style: none;
+  padding: 0px 20px 0px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Makes it vertical */
+  gap: 10px;
+}
+
+.vertical-menu li {
+  background-color: white;
+  padding: 3px 15px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.vertical-menu li a {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+  font-weight: normal;
+  display: block;
+  padding-right: 70px;
+}
+
+.vertical-menu li:hover {
+  background-color: rgb(194, 227, 247);
+  font-weight: bold;
+}
+
+.vertical-menu li a:hover {
+  font-weight: bold; /* Makes the text bold on hover */
+}
+
+/* For devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 820px) {
+  .inner-container1 {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+  }
+  .inner-container2 {
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
+    gap: 20px !important; /* Add gap between items */
+    align-items: center; /* Center-align items */
+    padding: 20px !important; /* Add padding */
+  }
+  .featured-products {
+    display: grid !important;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ) !important; /* 2 columns for tablets */
+    gap: 20px; /* Add gap between items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card {
+    width: 100%; /* Make product cards take full width */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 20px; /* Add spacing between cards */
+    border: 1px solid lightgrey; /* Remove border for mobile view */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  .v-menu {
+    flex: 1;
+    min-width: auto; /* Allow the menu to shrink */
+    max-width: 200px; /* Set a maximum width for the menu */
+  }
+  .b-menu {
+    flex: 2;
+    align-items: center;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center-align items */
+    min-width: 200px; /* Set a minimum width for the banner */
+    max-width: 600px; /* Set a maximum width for the banner */
+  }
+  .c-menu {
+    padding: 0px 20px;
+    flex: 1;
+  }
+  .c-menu:nth-child(3) {
+    flex-basis: 100%;
+    align-items: center; /* Center-align items */
+    justify-content: center; /* Center-align items */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+  }
+  .banner-content {
+    min-height: 200px; /* Set a minimum height for the banner */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    height: 200px; /* Reduce height for smaller screens */
+    text-align: center; /* Center-align text */
+    padding: 10px;
+    width: 80%; /* Full width for smaller screens */
+    margin: 0; /* Center the banner */
+    justify-content: center; /* Center the banner horizontally */
+    align-items: center; /* Center the banner vertically */
+  }
+
+  .banner-title,
+  .banner-description {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+  }
+
+  .banner-title {
+    font-size: 20px; /* Fixed font size */
+    margin: 0; /* Remove unnecessary margins */
+  }
+
+  .banner-description {
+    font-size: 16px; /* Fixed font size */
+    margin: 0; /* Remove unnecessary margins */
+  }
+  .banner-content .btn {
+    padding: 10px 20px; /* Fixed padding */
+    white-space: nowrap; /* Prevent text wrapping */
+    max-width: 150px; /* Optional: Limit button width */
+    text-align: center; /* Center-align button text */
+  }
+  .vertical-menu {
+    list-style: none;
+    padding: 0px 20px 0px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Makes it vertical */
+    /* gap: 10px; */
+  }
+
+  .vertical-menu li {
+    background-color: white;
+    padding: 3px 15px;
+    text-align: left;
+    border-radius: 5px;
+    width: 100%; /* Make the buttons take full width */
+  }
+
+  .vertical-menu li a {
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    display: block;
+    padding-right: 30px;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+
+  .vertical-menu li:hover {
+    background-color: rgb(194, 227, 247);
+    font-weight: bold;
+  }
+
+  .vertical-menu li a:hover {
+    font-weight: bold; /* Makes the text bold on hover */
+  }
+}
+/* For devices with a max width of 576px (mobile phones) */
+@media (max-width: 576px) {
+  .inner-container1 {
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
+    gap: 15px !important; /* Add gap between items */
+    align-items: center !important; /* Center-align items */
+    padding: 10px !important; /* Add padding for smaller screens */
+    width: 100% !important; /* Ensure the container takes full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  .inner-container2 {
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
+    gap: 20px !important; /* Add gap between items */
+    align-items: center; /* Center-align items */
+    padding: 20px !important; /* Add padding */
+  }
+
+  .vertical-menu {
+    padding: 3px 15px 3px 15px; /* Adjust padding for smaller screens */
+    display: flex;
+    text-align: center !important;
+    flex-direction: column;
+    height: auto; /* Allow height to adjust based on content */
+    gap: 10px !important; /* Add gap between items */
+    width: auto;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  }
+  .vertical-menu li {
+    display: flex;
+    justify-content: center; /* Center-align the buttons */
+    align-items: center;
+    /* padding: 10px; Adjust padding for smaller screens */
+    /* width: 100%; Make the buttons take full width */
+    text-align: center; /* Center-align the text inside the buttons */
+  }
+
+  .vertical-menu li a {
+    text-align: center; /* Center-align the link text */
+    display: block; /* Ensure the link spans the full width */
+    width: 100%; /* Make the link take full width */
+    padding: 0;
+  }
+  .banner-content {
+    height: auto; /* Further reduce height */
+    width: 200px;
+  }
+  .banner-title {
+    font-size: 18px;
+    margin: 0 !important; /* Remove unnecessary margins */
+    text-align: center; /* Center-align text */
+    padding: 0 !important;
+  }
+  .btn {
+    margin: auto;
+  }
+  .banner-description {
+    font-size: 14px;
+    margin: 0 !important; /* Remove unnecessary margins */
+  }
+  .custom-padding-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-card {
+    width: 100%; /* Make product cards take full width */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 20px; /* Add spacing between cards */
+    border: none; /* Remove border for mobile view */
+  }
+  .featured-products {
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
+    gap: 20px !important; /* Add gap between items */
+    align-items: center; /* Center-align items */
+  }
+  .countdown-container {
+    width: 100%; /* Make countdown container take full width */
+  }
+  .items-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+  }
+}

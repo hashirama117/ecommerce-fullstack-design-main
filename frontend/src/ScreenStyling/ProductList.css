@@ -1,0 +1,111 @@
+/* General styling for the product list */
+.product-list {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0; /* Center the product list */
+  font-family: Arial, sans-serif;
+  flex: 1;
+}
+
+/* Title styling */
+.product-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Grid container for product cards */
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between cards */
+  padding-left: auto;
+}
+
+/* Individual product card styling */
+.product-card2 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image styling */
+.product-image2 {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Product details styling */
+.product-card2 h2 {
+  font-size: 1.2rem;
+  margin: 10px;
+  color: #333;
+}
+
+.product-card2 p {
+  margin: 5px 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Button styling */
+.details-button {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: primary;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.details-button:hover {
+  background-color: #c1d3e7;
+}
+
+.cart-button {
+  margin-left: auto; /* Push the button to the right */
+  display: flex; /* Ensure it works with flexbox */
+  align-items: center; /* Center the button vertically */
+  justify-content: center; /* Center the button horizontally */
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 20px; /* Add some space to the right */
+  background-color: #ffffff;
+  color: primary;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  border: 1px solid #ddd; /* Add a border to the button */
+  align-self: flex-start;
+}
+.heart-icon {
+  color: #0d6efd; /* Change the color to red */
+  font-size: 1.5rem; /* Adjust the size */
+  transition: transform 0.2s, color 0.2s; /* Add smooth transitions */
+  cursor: pointer; /* Make it look clickable */
+}
+
+.heart-icon:hover {
+  color: #7b95dd; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+.outer-container4 {
+  display: flex;
+  padding: 30px 70px 20px 70px;
+  background-color: rgb(248, 249, 250);
+}

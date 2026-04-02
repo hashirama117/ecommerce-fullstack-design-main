@@ -1,0 +1,38 @@
+.breadcrumb {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  background-color: rgb(
+    248,
+    249,
+    250
+  ); /* Match the background color of the outer container */
+  padding: 10px 70px 10px 70px; /* Add padding to the breadcrumb container */
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #4d4e50;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 6px;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-home {
+  font-weight: 500;
+}
