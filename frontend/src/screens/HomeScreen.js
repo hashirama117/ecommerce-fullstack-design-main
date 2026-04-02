@@ -88,7 +88,7 @@ const HomePage = () => {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="#kids">
-              Gift boxes
+              Gift box
             </Link>
           </li>
           <li className="nav-item">
